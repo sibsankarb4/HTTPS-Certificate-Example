@@ -9,7 +9,7 @@ Create selfsign certificate using JKS keytool for HTTPS/TLS communication, among
 C:\Program Files\Java\jre1.8.0_121\bin
 
 # Step 2: Then run below command:
-keytool -genkey -alias https-example -storetype JKS -keyalg RSA -keysize 2048 -validity 365 -keystore https-example.jks
+C:\Program Files\Java\jre1.8.0_121\bin> keytool -genkey -alias https-example -storetype JKS -keyalg RSA -keysize 2048 -validity 365 -keystore https-example.jks
 
 Or use below command
 ====================
