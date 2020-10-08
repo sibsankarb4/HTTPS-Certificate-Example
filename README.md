@@ -23,3 +23,8 @@ keytool -list -v -keystore https-example.jks
 
 # To generate secret key use below command: 
 keytool -genseckey -alias sibs-example -storetype jceks -keyalg AES -keysize 256 -validity 365 -keystore sibs-example.jks
+
+# Openssl to generate RSA publickey/privatekey certificate
+openssl genrsa -out privateKey.pem 2048
+openssl rsa -in privateKey.pem -outform PEM -pubout -out publicKey.pem
+openssl rsa -in privateKey.pem -pubout -out publickey-1.crt
